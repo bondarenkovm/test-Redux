@@ -3,7 +3,7 @@ import { StatusFilter } from 'components/StatusFilter/StatusFilter';
 import { TaskCounter } from 'components/TaskCounter/TaskCounter';
 import { Button } from 'components/Button/Button';
 import css from './AppBar.module.css';
-import { deleteAllCompleted } from 'redux/actions';
+import { deleteAllCompleted } from 'redux/tasksSlice';
 
 export const AppBar = () => {
   const dispatch = useDispatch();
