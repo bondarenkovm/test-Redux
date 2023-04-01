@@ -46,6 +46,11 @@ export const rootReducer = (state = initialState, action) => {
           status: action.payload,
         },
       };
+    case 'tasks/deleteAllCompleted':
+      return {
+        ...state,
+        tasks: state.tasks.filter(task => task.completed),
+      };
     default:
       return state;
   }
